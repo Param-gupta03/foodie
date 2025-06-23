@@ -1,0 +1,34 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "food ordering app",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Param-gupta03/foodie.git"
+  },
+  "author": "Param",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Param-gupta03/foodie/issues"
+  },
+  "homepage": "https://github.com/Param-gupta03/foodie#readme",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.1",
+    "events": "^3.3.0",
+    "parcel": "^2.15.4",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "string_decoder": "^1.3.0",
+    "vm-browserify": "^1.1.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

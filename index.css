@@ -46,16 +46,6 @@ body {
   padding: 20px 30px;
 }
 
-/* Search Box */
-.search-box {
-  margin-bottom: 20px;
-  padding: 12px 20px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  width: 100%;
-  max-width: 400px;
-}
-
 /* Restaurant Container */
 .restaurant-container {
   display: flex;
@@ -77,8 +67,27 @@ body {
 
 .restaurant-logo {
   width: 100%;
-  
-  
-  
 }
 
+.shimmer-card{
+  width: 300px; 
+  height: 600px;
+  background-color: #f0f0f0;
+}
+
+/* serech and filter bar*/
+
+.ratingFilter
+{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.btn
+{
+  margin-left: 10px;
+}
+
+.ratingFilter :hover{
+  background-color: #ff6347;
+}

@@ -91,3 +91,8 @@ body {
 .ratingFilter :hover{
   background-color: #ff6347;
 }
+
+.user-card{
+  padding: 10px;
+  border:solid #333;
+}

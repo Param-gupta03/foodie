@@ -30,7 +30,7 @@ const RestaurantMenu=()=>{
       <div className="menu">
         <h1>{resInfo.cards[0].card.card.text}</h1>
         <ul className="menulist">
-          {itemCards.map((item)=>(<li key={item?.card?.info?.id}>{item?.card?.info?.name} - ₹{(item?.card?.info?.price || item?.card?.info?.defaultPrice)/100} </li>))}
+          {itemCards?.map((item)=>(<li key={item?.card?.info?.id}>{item?.card?.info?.name} - ₹{(item?.card?.info?.price || item?.card?.info?.defaultPrice)/100} </li>))}
         </ul>
       </div>
     )

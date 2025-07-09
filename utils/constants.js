@@ -5,3 +5,7 @@ export const LOGO_URL="https://img.freepik.com/premium-vector/simple-minimalist-
 export const MENU_URL="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9628669&lng=77.57750899999999&restaurantId=";
 
 export const BODY_URL="https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9628669&lng=77.57750899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+
+export const LinkedIn_URL="https://www.linkedin.com/in/param-gupta-9206092b9";
+
+export const GITHUB_URL="https://github.com/Param-gupta03";

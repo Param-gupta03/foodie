@@ -1,15 +1,17 @@
 import { CDN_URL } from "../../utils/constants";
 
 const RestaurantCard = ({ restaurantData }) => {
+  //console.log(restaurantData)
   const {
     cloudinaryImageId,
     name,
     areaName,
     avgRating,
     cuisines,
-    costForTwo,
-    deliveryTime,
+    costForTwo
   } = restaurantData?.info;
+  const deliveryTime=restaurantData?.info?.sla?.slaString;
+
 
   return (
     <div className="w-full bg-gray-100 rounded-lg overflow-hidden shadow hover:bg-gray-200 cursor-pointer">
@@ -28,10 +30,10 @@ const RestaurantCard = ({ restaurantData }) => {
             ⭐ {avgRating}
           </h4>
           <h4>{costForTwo}</h4>
-          <h4>{deliveryTime} mins</h4>
+          <h4>{deliveryTime}</h4>
         </div>
 
-        <p className="text-gray-500 text-sm mb-1">
+        <p className="text-gray -500 text-sm mb-1">
           {cuisines.join(", ").slice(0, 30)}
           {cuisines.join(", ").length > 30 ? "..." : ""}
         </p>
@@ -41,5 +43,18 @@ const RestaurantCard = ({ restaurantData }) => {
     </div>
   );
 };
+
+// export const withPromotedLebal =(RestaurantCard)=>{
+//   return (props)=>{
+//     return(
+//       <div>
+//         <label>
+//           Promoted
+//         </label>
+//         <RestaurantCard {...props}/>
+//       </div>
+//     );
+//   };
+// };
 
 export default RestaurantCard;

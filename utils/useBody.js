@@ -10,7 +10,6 @@ const useBody=()=>
         const fetchData= async ()=>{
           const data= await fetch(BODY_URL);
           const json = await data.json();
-          console.log(json);
           setRestaurantList(json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         }
         return (
